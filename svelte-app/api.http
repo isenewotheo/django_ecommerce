@@ -1,0 +1,42 @@
+POST http://127.0.0.1:8000/api/accounts/signup/
+Content-Type: application/json
+
+{
+    "username": "dare",
+    "first_name": "Temitope",
+    "last_name": "Elizabeth",
+    "email": "eli@gmail.com",
+    "password1": "eliza2003",
+    "password2": "eliza2003"
+}
+###
+
+POST  http://127.0.0.1:8000/api/accounts/logout/
+###
+
+POST  http://127.0.0.1:8000/api/accounts/login/
+Content-Type: application/json
+
+{
+    "username": "dare",
+    "password": "eliza2003"
+}
+###
+
+GET http://127.0.0.1:8000/api/accounts/me/
+###
+
+
+GET http://127.0.0.1:8000/api/products/search/?s=grey
+###
+
+GET http://127.0.0.1:8000/api/products/categories/2/
+# Content-Type: application/json
+
+#   {
+#     "name": "dell computer",
+#     "price": 623.34,
+#     "stock": 3,
+#     "img_url": "URL to image",
+#     "description": "This is the firs product in this product category and it is very cool"
+#   }
